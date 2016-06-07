@@ -49,7 +49,8 @@
                         <li class="scroll"><a href="products.aspx">Products</a></li>
                         <li class="scroll active"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll"><a href="customers.aspx">Customers</a></li>
-                        <li class="scroll"><a href="employees.aspx">Employees</a></li>               
+                        <li class="scroll"><a href="employees.aspx">Employees</a></li>  
+                        <li class="scroll"><a href="registerBeer.aspx">Register a Beer</a></li>              
                     </ul>
                 </div>
             </div><!--/.container-->

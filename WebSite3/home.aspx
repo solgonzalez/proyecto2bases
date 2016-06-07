@@ -46,6 +46,7 @@
                         <li class="scroll"><a href="products.aspx">Products</a></li>
                         <li class="scroll"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll"><a href="people.aspx">People</a></li>
+                        <li class="scroll"><a href="registerBeer.aspx">Register a Beer</a></li> 
                         <li class="scroll"><a href="#aboutus">About</a></li>                       
                         <li class="scroll"><a href="#get-in-touch">Contact</a></li>                   
                     </ul>
