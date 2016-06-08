@@ -58,6 +58,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
+INSERT INTO `cliente` VALUES (1,'img/imagenesPerfil/MHX.jpg','Rivera de Belen',1,5,'root@localhost','2016-06-08 13:13:51',NULL,NULL),(2,'img/imagenesPerfil/Marisol.jpg','Del MasXMenos 500 metros este',2,5,'root@localhost','2016-06-08 13:15:20','root@localhost','2016-06-08 13:17:42'),(3,'img/imagenesPerfil/Mariela.jpg','200 metros sur de la estación de trenes',3,3,'root@localhost','2016-06-08 13:16:41','root@localhost','2016-06-08 13:17:56');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,6 +88,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `empleado` WRITE;
 /*!40000 ALTER TABLE `empleado` DISABLE KEYS */;
+INSERT INTO `empleado` VALUES (1,'2016-06-08 13:22:35',4,'root@localhost','2016-06-08 13:22:35',NULL,NULL);
 /*!40000 ALTER TABLE `empleado` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,6 +98,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `estado` WRITE;
 /*!40000 ALTER TABLE `estado` DISABLE KEYS */;
+INSERT INTO `estado` VALUES (1,'Puntarenas',1,'root@localhost','2016-06-08 12:44:07',NULL,NULL),(2,'Limón',1,'root@localhost','2016-06-08 12:44:26',NULL,NULL),(3,'San José',1,'root@localhost','2016-06-08 12:44:35',NULL,NULL),(4,'Guanacaste',1,'root@localhost','2016-06-08 12:44:42',NULL,NULL),(5,'Heredia',1,'root@localhost','2016-06-08 12:44:47',NULL,NULL),(6,'Alajuela',1,'root@localhost','2016-06-08 12:44:52',NULL,NULL),(7,'Cartago',1,'root@localhost','2016-06-08 12:44:57',NULL,NULL),(8,'Washington',2,'root@localhost','2016-06-08 12:45:32',NULL,NULL),(9,'New York',2,'root@localhost','2016-06-08 12:45:40',NULL,NULL),(10,'California',2,'root@localhost','2016-06-08 12:46:23',NULL,NULL),(11,'Nevada',2,'root@localhost','2016-06-08 12:46:40',NULL,NULL),(12,'Ohio',2,'root@localhost','2016-06-08 12:46:53',NULL,NULL),(13,'North Carolina',2,'root@localhost','2016-06-08 12:47:08',NULL,NULL),(14,'Texas',2,'root@localhost','2016-06-08 12:47:19',NULL,NULL),(15,'Tokyo',3,'root@localhost','2016-06-08 12:47:46',NULL,NULL),(16,'Kyoto',3,'root@localhost','2016-06-08 12:47:52',NULL,NULL),(17,'Osaka',3,'root@localhost','2016-06-08 12:48:21',NULL,NULL),(18,'Kanagawa',3,'root@localhost','2016-06-08 12:48:31',NULL,NULL),(19,'Aichi',3,'root@localhost','2016-06-08 12:48:37',NULL,NULL),(20,'Hokaido',3,'root@localhost','2016-06-08 12:48:44',NULL,NULL),(21,'Fukuoka',3,'root@localhost','2016-06-08 12:48:58',NULL,NULL);
 /*!40000 ALTER TABLE `estado` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -115,6 +118,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `pais` WRITE;
 /*!40000 ALTER TABLE `pais` DISABLE KEYS */;
+INSERT INTO `pais` VALUES (1,'Costa Rica','root@localhost','2016-06-08 12:35:39',NULL,NULL),(2,'Estados Unidos','root@localhost','2016-06-08 12:35:57',NULL,NULL),(3,'Japón','root@localhost','2016-06-08 12:36:13',NULL,NULL);
 /*!40000 ALTER TABLE `pais` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,6 +128,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
+INSERT INTO `persona` VALUES (1,'William','Espinoza Ramirez','402260679','root@localhost','2016-06-08 12:12:50',NULL,NULL),(2,'Marisol','Gonzalez','305670498','root@localhost','2016-06-08 12:16:18',NULL,NULL),(3,'Mariela','Barrantes','204170894','root@localhost','2016-06-08 12:16:43',NULL,NULL),(4,'Adriana','Alvarez Figueroa','206730691','root@localhost','2016-06-08 13:21:01',NULL,NULL);
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -165,4 +170,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-06-08 12:04:36
+-- Dump completed on 2016-06-08 13:23:47
