@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="new-employee.aspx.cs" Inherits="new_employee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="other.aspx.cs" Inherits="other" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -48,8 +48,8 @@
                         <li class="scroll"><a href="products.aspx">Products</a></li>
                         <li class="scroll"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll"><a href="customers.aspx">Customers</a></li>
-                        <li class="scroll active"><a href="employees.aspx">Employees</a></li>
-                        <li class="scroll"><a href="other.aspx">Other</a></li>              
+                        <li class="scroll"><a href="employees.aspx">Employees</a></li>
+                        <li class="scroll active"><a href="other.aspx">Other</a></li>              
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -62,30 +62,38 @@
                 <div class="registrationform col-lg-offset-1">
                     <div class="form-horizontal">
                         <fieldset>
-                            <legend>Employee Registration <i class="fa fa-pencil pull-right"></i></legend>
-                            <div class="form-group">
-                                <asp:Label ID="Label1" runat="server" Text="Username" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
-                                <div class="col-lg-5">
-                                    <asp:TextBox ID="newUsername" runat="server" placeholder="Username" CssClass="form-control"></asp:TextBox>
-                                </div>
+                            <br/>
+                            <br/>
+                            <legend>An endless world of beer varieties <i class="fa fa-pencil pull-right"></i></legend>
+                            <div class="col-lg-12 col-lg-offset-1">
+                                <asp:HyperLink ID="btnAddFerType" CssClass="btn btn-2 btn-1d" navigateURL="~/newFerType.aspx" runat="server">New Fermentation Type</asp:HyperLink>                             
+                                <asp:HyperLink ID="btnNewColor" CssClass="btn btn-2 btn-1d" navigateURL="~/newColor.aspx" runat="server">New Beer Color</asp:HyperLink>
+                                <asp:HyperLink ID="btnNewStyle" CssClass="btn btn-2 btn-1d" navigateURL="~/newStyle.aspx" runat="server">New Beer Style</asp:HyperLink>
                             </div>
-                            <div class="form-group">
-                                <asp:Label ID="Label2" runat="server" Text="Password" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
-                                <div class="col-lg-5">
-                                    <asp:TextBox ID="newPass" runat="server" TextMode="Password" placeholder="Password" CssClass="form-control"></asp:TextBox>
-                                </div>
+                            <br/>
+                            <br/>
+                            <div class="col-lg-12 col-lg-offset-1">
+                                <asp:HyperLink ID="btnNewBody" CssClass="btn btn-2 btn-1d" navigateURL="~/newBody.aspx" runat="server">New Beer Body</asp:HyperLink>                             
+                                <asp:HyperLink ID="btnNewSubCat" CssClass="btn btn-2 btn-1d" navigateURL="~/newSubCat.aspx" runat="server">New Subcategory</asp:HyperLink>
+                                <asp:HyperLink ID="btnNewCat" CssClass="btn btn-2 btn-1d" navigateURL="~/newCat.aspx" runat="server">New Category</asp:HyperLink>
                             </div>
-                            <div class="form-group">
-                                <asp:Label ID="Label3" runat="server" Text="Confirm Password" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
-                                <div class="col-lg-5">
-                                    <asp:TextBox ID="newPassConf" runat="server" TextMode="Password" placeholder="Password" CssClass="form-control"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-lg-8 col-lg-offset-4">
-                                    <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-warning" Text="Submit"/>
-                                    <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-warning" Text="Cancel" OnClick="btnCancel_Click"/>                              
-                                </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6" style="background-color:#BD8D46">
+                <div class="registrationform col-lg-offset-1">
+                    <div class="form-horizontal">
+                        <fieldset>
+                            <br/>
+                            <br/>
+                            <legend class="pull-right">Statistics</legend>
+                            <div class="col-lg-12 col-lg-offset-1">
+                                <asp:HyperLink ID="placesBestCust" CssClass="btn btn-2 btn-1d" navigateURL="~/places-best-cust.aspx" runat="server">Places for Best Buyers</asp:HyperLink>                             
+                                <asp:HyperLink ID="top5cust" CssClass="btn btn-2 btn-1d" navigateURL="~/top5cust.aspx" runat="server">Top 5 Customers</asp:HyperLink>
+                                <asp:HyperLink ID="top5beers" CssClass="btn btn-2 btn-1d" navigateURL="~/top5beers.aspx" runat="server">Top 5 Beers</asp:HyperLink>
                             </div>
                         </fieldset>
                     </div>

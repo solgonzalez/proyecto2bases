@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="new-employee.aspx.cs" Inherits="new_employee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="newStyle.aspx.cs" Inherits="newStyle" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -48,8 +48,8 @@
                         <li class="scroll"><a href="products.aspx">Products</a></li>
                         <li class="scroll"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll"><a href="customers.aspx">Customers</a></li>
-                        <li class="scroll active"><a href="employees.aspx">Employees</a></li>
-                        <li class="scroll"><a href="other.aspx">Other</a></li>              
+                        <li class="scroll"><a href="employees.aspx">Employees</a></li>
+                        <li class="scroll active"><a href="other.aspx">Other</a></li>              
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -62,28 +62,22 @@
                 <div class="registrationform col-lg-offset-1">
                     <div class="form-horizontal">
                         <fieldset>
-                            <legend>Employee Registration <i class="fa fa-pencil pull-right"></i></legend>
+                            <legend>New Beer Style<i class="fa fa-pencil pull-right"></i></legend>
                             <div class="form-group">
-                                <asp:Label ID="Label1" runat="server" Text="Username" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text="Name" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
                                 <div class="col-lg-5">
-                                    <asp:TextBox ID="newUsername" runat="server" placeholder="Username" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="newName" runat="server" placeholder="Name" CssClass="form-control"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="Label2" runat="server" Text="Password" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
+                                <asp:Label ID="Label2" runat="server" Text="Description" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
                                 <div class="col-lg-5">
-                                    <asp:TextBox ID="newPass" runat="server" TextMode="Password" placeholder="Password" CssClass="form-control"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <asp:Label ID="Label3" runat="server" Text="Confirm Password" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
-                                <div class="col-lg-5">
-                                    <asp:TextBox ID="newPassConf" runat="server" TextMode="Password" placeholder="Password" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="newDescript" runat="server" TextMode="MultiLine" placeholder="Description" CssClass="form-control2"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-lg-8 col-lg-offset-4">
-                                    <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-warning" Text="Submit"/>
+                                    <asp:Button ID="btnSave" runat="server" CssClass="btn btn-warning" Text="Save"/>
                                     <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-warning" Text="Cancel" OnClick="btnCancel_Click"/>                              
                                 </div>
                             </div>
@@ -132,3 +126,4 @@
     </form>
 </body>
 </html>
+

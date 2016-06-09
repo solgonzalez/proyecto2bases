@@ -47,8 +47,7 @@
                         <li class="scroll"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll"><a href="customers.aspx">Customers</a></li>
                         <li class="scroll"><a href="employees.aspx">Employees</a></li> 
-                        <li class="scroll"><a href="#aboutus">About</a></li>                       
-                        <li class="scroll"><a href="#get-in-touch">Contact</a></li>                   
+                        <li class="scroll"><a href="other.aspx">Other</a></li>                                       
                     </ul>
                     <asp:HyperLink ID="btnSignOut" CssClass="btn btn-2 btn-1d" navigateURL="~/login.aspx" runat="server">Sign Out</asp:HyperLink>
                 </div>
@@ -137,44 +136,6 @@
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Get in Touch</h2>
                 <h4 class="text-center wow fadeInDown"><strong>We are always trying to improve our business, <br /> so if you have any suggestions or complaints <br />please let us know.</strong></h4>
-            </div>
-        </div>
-    </section>
-    <!--/#get-in-touch-->
-    <section id="contact">
-        <div id="google-map" style="height:650px" data-latitude="52.365629" data-longitude="4.871331"></div>
-        <div class="container-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <div class="contact-form">
-                            <h4>Contact Info</h4>
-                            <address>
-                              <strong>Full Pint co.</strong><br>
-                              San Jose<br>
-                              Costa Rica<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                                  <asp:HyperLink ID="HyperLink10" CssClass="btn btn-2 btn-1d" NavigateUrl="http://www.brainyquote.com/quotes/authors/a/a_p_j_abdul_kalam.html"
-                                runat="server">Send Message</asp:HyperLink>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
