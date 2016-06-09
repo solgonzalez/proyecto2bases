@@ -11,4 +11,9 @@ public partial class newColor : System.Web.UI.Page
     {
 
     }
+
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("other.aspx");
+    }
 }
