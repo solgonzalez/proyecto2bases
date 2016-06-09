@@ -40,6 +40,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `cerveza` WRITE;
 /*!40000 ALTER TABLE `cerveza` DISABLE KEYS */;
+INSERT INTO `cerveza` VALUES (1,'TOURTEL','No Alcohol',3,20,3000,1,1,1,1,'root@localhost','2016-06-08 17:39:20','root@localhost','2016-06-08 22:05:50',1),(2,'AGNUS DAI','CON ALCOHOL',3,20,5000,2,2,6,2,'root@localhost','2016-06-08 17:39:21',NULL,NULL,6),(3,'AKA MAHAN','10% ALCOHOL',5,15,35000,2,4,1,3,'root@localhost','2016-06-08 17:39:21',NULL,NULL,8),(4,'Altbier','5.50% ALCOHOL',6,16,6000,2,1,17,2,'root@localhost','2016-06-08 17:39:22',NULL,NULL,10),(5,'Andromeda','SIN ALCOHOL',4,14,20000,2,2,29,3,'root@localhost','2016-06-08 17:39:22',NULL,NULL,12),(8,'Bee Squad','8,20% ALCOHOL',4,10,10000,2,4,31,1,'root@localhost','2016-06-08 17:41:02',NULL,NULL,6),(9,'Andares','7% ALCOHOL',4,15,7000,1,1,2,2,'root@localhost','2016-06-08 17:41:52',NULL,NULL,10),(10,'O9000','Alcohol Level OVER 90000!!!!',10,10,100000,1,1,1,1,'root@localhost','2016-06-08 20:28:39','root@localhost','2016-06-08 22:11:21',1),(13,'N7000','Over 7000% normal alcohol levels',32,100,5000,1,3,20,1,'root@localhost','2016-06-08 20:50:27',NULL,NULL,2);
 /*!40000 ALTER TABLE `cerveza` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -49,6 +50,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `cervezasxcliente` WRITE;
 /*!40000 ALTER TABLE `cervezasxcliente` DISABLE KEYS */;
+INSERT INTO `cervezasxcliente` VALUES (1,1,1,'5','root@localhost','2016-06-08 17:47:07',NULL,NULL),(2,2,2,'7','root@localhost','2016-06-08 17:47:07',NULL,NULL),(3,3,3,'8','root@localhost','2016-06-08 17:47:07',NULL,NULL),(4,1,4,'10','root@localhost','2016-06-08 17:47:08',NULL,NULL),(5,2,5,'12','root@localhost','2016-06-08 17:47:08',NULL,NULL),(6,3,9,'1','root@localhost','2016-06-08 17:47:08',NULL,NULL),(7,1,8,'2','root@localhost','2016-06-08 17:47:08',NULL,NULL),(8,2,1,'7','root@localhost','2016-06-08 17:47:08',NULL,NULL),(9,3,2,'3','root@localhost','2016-06-08 17:47:08',NULL,NULL);
 /*!40000 ALTER TABLE `cervezasxcliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,7 +60,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `cliente` WRITE;
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
-INSERT INTO `cliente` VALUES (1,'img/imagenesPerfil/MHX.jpg','Rivera de Belen',1,5,'root@localhost','2016-06-08 13:13:51',NULL,NULL),(2,'img/imagenesPerfil/Marisol.jpg','Del MasXMenos 500 metros este',2,5,'root@localhost','2016-06-08 13:15:20','root@localhost','2016-06-08 13:17:42'),(3,'img/imagenesPerfil/Mariela.jpg','200 metros sur de la estación de trenes',3,3,'root@localhost','2016-06-08 13:16:41','root@localhost','2016-06-08 13:17:56');
+INSERT INTO `cliente` VALUES (1,'img/imagenesPerfil/MHX.jpg','Rivera de Belen',5,'root@localhost','2016-06-08 13:13:51',NULL,NULL,NULL,NULL,NULL),(2,'img/imagenesPerfil/Marisol.jpg','Del MasXMenos 500 metros este',5,'root@localhost','2016-06-08 13:15:20','root@localhost','2016-06-08 13:17:42',NULL,NULL,NULL),(3,'img/imagenesPerfil/Mariela.jpg','200 metros sur de la estación de trenes',3,'root@localhost','2016-06-08 13:16:41','root@localhost','2016-06-08 13:17:56',NULL,NULL,NULL),(4,'System.Web.UI.WebControls.FileUpload','Mercurio',1,'root@localhost','2016-06-08 22:25:42',NULL,NULL,'Mario','Gazel','4002610'),(5,'','',1,'root@localhost','2016-06-08 22:27:16','root@localhost','2016-06-08 23:29:29','Mario','Gazel','4002610');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -158,6 +160,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'doggee','26d33687bdb491480087ce1096c80329aaacbec7',4,'root@localhost','2016-06-08 14:18:37',NULL,NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -170,4 +173,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-06-08 13:23:47
+-- Dump completed on 2016-06-08 23:34:13
