@@ -62,7 +62,7 @@
                 <div class="registrationform col-lg-offset-1">
                     <div class="form-horizontal">
                         <fieldset>
-                            <legend>New Beer Category<i class="fa fa-pencil pull-right"></i></legend>
+                            <legend>New Beer Subcategory<i class="fa fa-pencil pull-right"></i></legend>
                             <div class="form-group">
                                 <asp:Label ID="Label1" runat="server" Text="Name" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
                                 <div class="col-lg-5">
