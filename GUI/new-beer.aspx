@@ -47,7 +47,8 @@
                         <li class="scroll active"><a href="products.aspx">Products</a></li>
                         <li class="scroll"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll"><a href="customers.aspx">Customers</a></li>
-                        <li class="scroll"><a href="employees.aspx">Employees</a></li>                   
+                        <li class="scroll"><a href="employees.aspx">Employees</a></li>
+                        <li class="scroll"><a href="other.aspx">Other</a></li>                   
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -135,12 +136,6 @@
                                 <asp:Label ID="Label13" runat="server" Text="Subcategory" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
                                 <div class="col-lg-5">
                                     <asp:DropDownList ID="newSubCat" runat="server" CssClass="form-control"></asp:DropDownList>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <asp:Label ID="Label14" runat="server" Text="Category" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
-                                <div class="col-lg-5">
-                                    <asp:DropDownList ID="newCat" runat="server" CssClass="form-control"></asp:DropDownList>
                                 </div>
                             </div>
                             <div class="form-group">

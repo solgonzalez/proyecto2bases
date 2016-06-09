@@ -48,7 +48,8 @@
                         <li class="scroll"><a href="products.aspx">Products</a></li>
                         <li class="scroll"><a href="purchase.aspx">Purchase</a></li>
                         <li class="scroll active"><a href="customers.aspx">Customers</a></li>
-                        <li class="scroll"><a href="employees.aspx">Employees</a></li>              
+                        <li class="scroll"><a href="employees.aspx">Employees</a></li> 
+                        <li class="scroll"><a href="other.aspx">Other</a></li>             
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -84,19 +85,6 @@
                                 <asp:Label ID="Label3" runat="server" Text="Address" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
                                 <div class="col-lg-5">
                                     <asp:TextBox ID="newAddress" runat="server" TextMode="MultiLine" Rows="1" CssClass="form-control2"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <asp:Label ID="Label4" runat="server" Text="Gender" CssClass="col-lg-2 control-label col-lg-offset-2"></asp:Label>
-                                <div class="col-lg-5">
-                                    <div class="radio">
-                                        <label>
-                                            <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                                                <asp:ListItem Selected="True">Male</asp:ListItem>
-                                                <asp:ListItem>Female</asp:ListItem>
-                                            </asp:RadioButtonList>
-                                        </label>
-                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
